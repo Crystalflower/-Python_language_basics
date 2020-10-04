@@ -1,0 +1,3 @@
+my_list = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 78, 123, 55]
+new_list = [el for last_el, el in zip(my_list, my_list[1:]) if el > last_el]
+print(new_list)
