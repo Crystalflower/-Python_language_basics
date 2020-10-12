@@ -8,11 +8,11 @@
 
 class Road():
     def __init__(self, length, width):
-        self.__length = length
-        self.__width = width
+        self._length = length
+        self._width = width
 
     def calculation(self):
-        weight = self.__length * self.__width * 25 * 5
+        weight = self._length * self._width * 25 * 5
         print('Вес асфальта:', weight/1000, 'тыс. т.')
 
 

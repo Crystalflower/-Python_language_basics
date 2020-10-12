@@ -15,10 +15,10 @@ from itertools import cycle
 
 
 class TrafficLight:
-    _color = ['красный', 'желтый', 'зеленый']
+    __color = ['красный', 'желтый', 'зеленый']
 
     def runnng(self):
-        for el in cycle(TrafficLight._color):
+        for el in cycle(TrafficLight.__color):
             print(el)
             if el == 'красный':
                 time.sleep(7)
