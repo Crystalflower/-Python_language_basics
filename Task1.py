@@ -29,7 +29,7 @@ class Matrix:
                     count2 += 1
                 new_matrix.append(mini_matrix)
                 count1 += 1
-            return '\n'.join(str(i).replace(',', ' ').replace('[', '').replace(']', '') for i in new_matrix) + '\n'
+            return Matrix(new_matrix)
         else:
             return "Нельзя складывать матрицы разного размера!"
 
@@ -38,4 +38,5 @@ one = Matrix([[1, 1], [2, 2], [3, 3]])
 
 two = Matrix([[1, 1], [1, 1], [1, 1]])
 print(one + two)
-print(one)
+print()
+
